@@ -50,6 +50,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         function coldAdd(){
             cold_count = cold_count + 1;
         }
+	
+	function results(){ // result function simply captures information in paragraph "results" 
+	    var resultText = document.getElementById("results");
+	}
+
 
   </script>
 
@@ -110,7 +115,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
 		<p>Do you have a fever?</p>
-		<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!adding buttons; #two makes it turn to next page>
+		<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!adding buttons; #three makes it turn to next page>
          	<a href="#three"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
 
 	</div>
@@ -123,7 +128,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
 		<p>Do you have a sore throat?</p>
-		<a href="#four"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!adding buttons; #two makes it turn to next page>
+		<a href="#four"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!adding buttons; #four makes it turn to next page>
          	<a href="#four"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
 
 	</div>
@@ -136,11 +141,21 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
 		<p>Are your symptoms seasonal or chronic?</p>
-		<a href="#five"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!adding buttons; #two makes it turn to next page>
+		<a href="#five"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!adding buttons; #five makes it turn to next page>
          	<a href="#five"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+		<a href="#six" class="w3-btn w3-black"> Results </a> <! results button> 
 
 	</div>
 </div>
+
+<! last page as results page to output cold or allergy> 
+<div class="page" id="five">
+	<div id="content" class="w3-container">
+		<!outputting results by utilizing "+" to incorporate numerical values through variables> 
+		<p id="results"> resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; </p>
+	</div>
+</div>
+	
 	
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
