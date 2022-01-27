@@ -142,8 +142,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="content" class="w3-container">
 		<p>Are your symptoms seasonal or chronic?</p>
 		<a href="#five"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!adding buttons; #five makes it turn to next page>
-         	<a href="#five"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
-		<a href="#six" class="w3-btn w3-black"> Results </a> <! results button> 
+         	<a href="#five"  onclick="coldAdd();" class="w3-btn w3-black">No</a> 
 
 	</div>
 </div>
@@ -152,6 +151,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <div class="page" id="five">
 	<div id="content" class="w3-container">
 		<!outputting results by utilizing "+" to incorporate numerical values through variables> 
+		<a href="#six"   onclick="results();" class="w3-btn w3-black"> Results </a> <! results button>
 		<p id="results"> resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; </p>
 	</div>
 </div>
