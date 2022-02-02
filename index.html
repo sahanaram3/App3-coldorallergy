@@ -39,8 +39,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	// functions that keep track of count; "counter" for every page in order to output accurate result  
         var allergy_count = 0;
         var cold_count = 0;
-	var allergyPercent = allergy_count/4;
-	var coldPercent = cold_count/4; 
+	 
 
         function allergyAdd(){
             allergy_count = allergy_count + 1;
@@ -54,7 +53,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	function results(){ // result function simply captures information in paragraph "results" 
 	    var resultText = document.getElementById("results");
+	    var allergyPercent = allergy_count/4;
+	    var coldPercent = cold_count/4;
+	    resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent;
 	}
+	
 
 
   </script>
@@ -155,7 +158,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<!outputting results by utilizing "+" to incorporate numerical values through variables> 
 		<!<a href="#six"   onclick="results();" class="w3-btn w3-black"> Results </a> <! results button>>
 		<p id="results"></p>
-		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent;
+		
 	</div>
 </div>
 	
