@@ -49,6 +49,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
         function coldAdd(){
             cold_count = cold_count + 1;
+		alert(cold_count);
         }
 	
 	function resultOutput(){  
@@ -119,8 +120,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
 		<p>Do you have a fever?</p>
-		<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!--adding buttons; #three makes it turn to next page-->
-         	<a href="#three"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+		<a href="#three"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a> <!--adding buttons; #three makes it turn to next page-->
+         	<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
 
 	</div>
 </div>	
@@ -132,8 +133,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
 		<p>Do you have a sore throat?</p>
-		<a href="#four"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!--adding buttons; #four makes it turn to next page-->
-         	<a href="#four"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+		<a href="#four"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a> <!--adding buttons; #four makes it turn to next page-->
+         	<a href="#four"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
 
 	</div>
 </div>
@@ -156,7 +157,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<h1>Results</h2>
 	<div id="content" class="w3-container">
 		<!--outputting results by utilizing "+" to incorporate numerical values through variables--> 
-		<a href="#six"   onclick="resultOutput();" class="w3-btn w3-black"> Results </a> <! results button>
+		<a onclick="resultOutput();" class="w3-btn w3-black"> Results </a> <! results button>
 		<p id="results"</p>
 		
 	</div>
