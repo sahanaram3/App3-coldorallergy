@@ -51,13 +51,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
             cold_count = cold_count + 1;
         }
 	
-	function results(){ // result function simply captures information in paragraph "results" 
+	function resultOutput(){  
 	    var resultText = document.getElementById("results");
 	    var allergyPercent = allergy_count/4;
 	    var coldPercent = cold_count/4;
 	    resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent;
 	}
-	
+	// result function simply captures information in paragraph "results"
 
 
   </script>
@@ -155,8 +155,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <div class="page" id="five">
 	<h1>Results</h2>
 	<div id="content" class="w3-container">
-		<!outputting results by utilizing "+" to incorporate numerical values through variables> 
-		<!<a href="#six"   onclick="results();" class="w3-btn w3-black"> Results </a> <! results button>>
+		<!--outputting results by utilizing "+" to incorporate numerical values through variables--> 
+		<a href="#six"   onclick="resultOutput();" class="w3-btn w3-black"> Results </a> <! results button>
 		<p id="results"</p>
 		
 	</div>
